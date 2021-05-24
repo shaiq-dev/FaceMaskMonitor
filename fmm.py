@@ -72,4 +72,5 @@ class FMM(object):
                 break
 
     def check_image(self, img):
+        img = cv2.imread(img, cv2.IMREAD_UNCHANGED)
         return self.predict(img)
